@@ -39,6 +39,7 @@
     "tap": "5.7.0"
   },
   "dependencies": {
+    "normalize-html-whitespace": "0.2.0",
     "x-ray": "2.1.1"
   }
 }
