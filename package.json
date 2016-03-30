@@ -1,0 +1,44 @@
+{
+  "name": "tfk-search-index",
+  "version": "1.0.0",
+  "description": "Scrape webpages and dump result to elasticsearch",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.4.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "Search",
+    "Telemark fylkeskommune",
+    "Tfk",
+    "Scraping",
+    "Indexing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/tfk-search-index.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/tfk-search-index/issues"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.9",
+    "standard": "6.0.8",
+    "tap": "5.7.0"
+  },
+  "dependencies": {
+    "x-ray": "2.1.1"
+  }
+}
