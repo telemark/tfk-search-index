@@ -26,3 +26,12 @@ tap.test('returns expected data', function (test) {
     test.done()
   })
 })
+
+tap.test('returns error for nonexisting urls', function (test) {
+  var nonExistentUrl = 'https://this.does.not.exist.hallibutrullensnurf.io'
+
+  xrayPage(nonExistentUrl, function (error, data) {
+    tap.ok(error, 'Expected error, OK')
+    test.done()
+  })
+})

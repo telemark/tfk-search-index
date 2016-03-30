@@ -20,3 +20,12 @@ tap.test('returns expected data', function (test) {
   tap.equal(JSON.stringify(expectedData, null, 2), JSON.stringify(actualData, null, 2), 'Expected data, OK')
   test.done()
 })
+
+tap.test('returns expected data if no description', function (test) {
+  var inputData = require('./data/xray.data.no.description.json')
+  var expectedData = require('./data/repacked.data.no.description.json')
+  var actualData = repackContent(inputData)
+
+  tap.equal(JSON.stringify(expectedData, null, 2), JSON.stringify(actualData, null, 2), 'Expected data if no description, OK')
+  test.done()
+})
