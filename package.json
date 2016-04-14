@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Scrape webpages and dump result to elasticsearch",
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.1"
+    "node": ">=4.4.2"
   },
   "scripts": {
     "start": "node index.js",
