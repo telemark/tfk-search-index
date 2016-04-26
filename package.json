@@ -43,6 +43,6 @@
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "4.0.0",
     "wreck": "7.2.0",
-    "x-ray": "2.2.0"
+    "x-ray": "2.3.0"
   }
 }
