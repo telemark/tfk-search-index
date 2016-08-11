@@ -39,7 +39,7 @@
     "tap": "6.3.0"
   },
   "dependencies": {
-    "jsonwebtoken": "7.1.8",
+    "jsonwebtoken": "7.1.9",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "4.0.0",
     "wreck": "9.0.0",
