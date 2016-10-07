@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.3"
+    "node": ">=4.6.0"
   },
   "scripts": {
     "start": "node index.js",
