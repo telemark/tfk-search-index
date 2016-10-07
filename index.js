@@ -1,12 +1,13 @@
 'use strict'
 
-var http = require('http')
-var smtaStream = require('sitemap-to-array').stream
-var config = require('./config')
-var xrayPage = require('./lib/xray-page')
-var repackContent = require('./lib/repack-content')
-var addIndex = require('./lib/add-index')
-var deleteIndex = require('./lib/delete-index')
+const config = require('./config')
+const protocol = /https/.test(config.SITEMAP_URL) ? 'https' : 'http'
+const http = require(protocol)
+const smtaStream = require('sitemap-to-array').stream
+const xrayPage = require('./lib/xray-page')
+const repackContent = require('./lib/repack-content')
+const addIndex = require('./lib/add-index')
+const deleteIndex = require('./lib/delete-index')
 var pages = []
 
 function indexPages (pages) {

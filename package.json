@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "standard && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install && node setup.js"
@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "coveralls": "2.11.14",
+    "nsp": "2.6.2",
     "standard": "8.3.0",
     "tap": "7.1.2"
   },
