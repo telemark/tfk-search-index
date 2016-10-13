@@ -2,7 +2,7 @@
 
 var tap = require('tap')
 var jwt = require('jsonwebtoken')
-var generateToken = require('../lib/generate-token')
+var generateToken = require('../../lib/generate-token')
 var secret = 'NeverShareYourSecret'
 var payload = {
   name: 'zrrrzt',

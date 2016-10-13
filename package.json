@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Scrape webpages and dump result to elasticsearch",
   "license": "MIT",
   "author": {
@@ -14,10 +14,11 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "standard && nsp check && tap --reporter=spec test/*.js",
-    "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js",
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "Search",
