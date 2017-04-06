@@ -3,6 +3,7 @@
   "version": "1.1.15",
   "description": "Scrape webpages and dump result to elasticsearch",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -35,16 +36,15 @@
     "url": "http://github.com/telemark/tfk-search-index/issues"
   },
   "devDependencies": {
-    "coveralls": "2.13.0",
-    "nsp": "2.6.2",
-    "standard": "8.6.0",
+    "nsp": "2.6.3",
+    "standard": "10.0.0",
     "tap": "10.2.0"
   },
   "dependencies": {
     "jsonwebtoken": "7.3.0",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "4.0.0",
-    "wreck": "10.0.0",
+    "wreck": "12.0.0",
     "x-ray": "2.3.1"
   }
 }
