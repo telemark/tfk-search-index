@@ -39,7 +39,7 @@
     "coveralls": "2.11.16",
     "nsp": "2.6.3",
     "standard": "10.0.1",
-    "tap": "10.3.1"
+    "tap": "10.3.2"
   },
   "dependencies": {
     "jsonwebtoken": "7.3.0",
