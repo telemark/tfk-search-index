@@ -36,7 +36,7 @@
     "url": "http://github.com/telemark/tfk-search-index/issues"
   },
   "devDependencies": {
-    "coveralls": "2.11.16",
+    "coveralls": "2.13.1",
     "nsp": "2.6.3",
     "standard": "10.0.2",
     "tap": "10.3.2"
