@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "description": "Scrape webpages and dump result to elasticsearch",
   "license": "MIT",
   "private": true,
