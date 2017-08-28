@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index",
-  "version": "1.1.30",
+  "version": "1.1.31",
   "description": "Scrape webpages and dump result to elasticsearch",
   "license": "MIT",
   "private": true,
@@ -44,7 +44,7 @@
   "dependencies": {
     "jsonwebtoken": "7.4.3",
     "normalize-html-whitespace": "0.2.0",
-    "sitemap-to-array": "5.0.1",
+    "sitemap-to-array": "5.0.0",
     "wreck": "12.2.3",
     "x-ray": "2.3.2"
   }
