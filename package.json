@@ -45,7 +45,7 @@
     "jsonwebtoken": "8.0.1",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "5.0.0",
-    "wreck": "13.0.2",
+    "wreck": "13.0.3",
     "x-ray": "2.3.2"
   }
 }
