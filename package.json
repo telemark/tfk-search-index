@@ -42,7 +42,7 @@
     "tap": "11.1.1"
   },
   "dependencies": {
-    "jsonwebtoken": "8.1.1",
+    "jsonwebtoken": "8.2.0",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "5.0.0",
     "wreck": "14.0.2",
