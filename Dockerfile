@@ -1,14 +1,5 @@
-###########################################################
-#
-# Dockerfile for tfk-search-index
-#
-###########################################################
-
-# Setting the base to nodejs 4.6.0
-FROM mhart/alpine-node:4.6.0
-
-# Maintainer
-MAINTAINER Geir Gåsodden
+# Setting the base to nodejs 8.10.0
+FROM node:8.10.0-alpine
 
 #### Begin setup ####
 
