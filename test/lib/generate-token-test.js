@@ -1,5 +1,3 @@
-'use strict'
-
 var tap = require('tap')
 var generateToken = require('../../lib/generate-token')
 

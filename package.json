@@ -16,6 +16,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "test-offline": "standard && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
@@ -43,10 +44,15 @@
     "tap": "11.1.2"
   },
   "dependencies": {
+    "axios": "0.18.0",
+    "dotenv": "5.0.1",
     "jsonwebtoken": "8.2.0",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "5.0.1",
-    "wreck": "13.0.3",
-    "x-ray": "2.3.2"
+    "uuid": "3.2.1",
+    "winston": "2.4.1",
+    "winston-papertrail": "1.0.5",
+    "x-ray": "2.3.2",
+    "xml2js": "0.4.19"
   }
 }

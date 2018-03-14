@@ -1,15 +1,16 @@
 [![Build Status](https://travis-ci.org/telemark/tfk-search-index.svg?branch=master)](https://travis-ci.org/telemark/tfk-search-index)
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-search-index/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-search-index?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-search-index.svg)](https://greenkeeper.io/)
+
 # tfk-search-index
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-search-index.svg)](https://greenkeeper.io/)
 Scrape webpage and index result in elasticsearch
 
 ## Docker
 To run this module as a service use the docker image.
 
-Change the ENV parts of the [Dockerfile](Dockerfile) or use [docker.env](docker.env)
+Change the [docker.env](docker.env) to match your environment
 
 Build
 ```sh
@@ -23,12 +24,6 @@ $ docker pull telemark/tfk-search-index
 ```
 
 Run a container
-
-```sh
-$ docker run --rm tfk-search-index
-```
-
-or with a .env file
 
 ```sh
 $ docker run --env-file=docker.env --rm tfk-search-index

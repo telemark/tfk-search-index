@@ -1,5 +1,3 @@
-'use strict'
-
 var tap = require('tap')
 var repackContent = require('../../lib/repack-content')
 
