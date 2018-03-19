@@ -2,16 +2,14 @@ var fs = require('fs')
 var tap = require('tap')
 var xrayPage = require('../../lib/xray-page')
 
-tap.test('requires input', test => {
+tap.test('requires input', async test => {
   var expectedErrorMessage = 'Missing required input'
   var inputData = false
 
-  return xrayPage(inputData)
-    .then(console.log)
-    .error(error => {
-      tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-      test.done()
-    })
+  return xrayPage(inputData).then(console.log).catch(error => {
+    tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
+    test.done()
+  })
 })
 
 tap.test('returns expected data', test => {
