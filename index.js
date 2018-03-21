@@ -29,7 +29,7 @@ async function indexPages () {
       const page = pages.pop()
       logger('info', ['index', 'indexPages', 'indexing', page])
       try {
-        const data = xrayPage(page)
+        const data = await xrayPage(page)
         let content = repackContent(data)
         content.url = page
         const index = prepareIndex(content)
