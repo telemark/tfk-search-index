@@ -1,6 +1,5 @@
 const path = require('path')
-const xrayPage = require('./lib/xray-page')
-const repackContent = require('./lib/repack-content')
+const parsePage = require('./lib/parse-page')
 const getSitemap = require('./lib/get-sitemap')
 const addIndex = require('./lib/add-index')
 const deleteIndex = require('./lib/delete-index')
@@ -29,8 +28,7 @@ async function indexPages () {
       const page = pages.pop()
       logger('info', ['index', 'indexPages', 'indexing', page])
       try {
-        const data = await xrayPage(page)
-        let content = repackContent(data)
+        let content = await parsePage(page)
         content.url = page
         const index = prepareIndex(content)
         await addIndex(index)
@@ -48,58 +46,3 @@ async function indexPages () {
 }
 
 indexPages()
-
-/*
-function indexPages (pages) {
-  let list = JSON.parse(JSON.stringify(pages))
-
-  function next () {
-    if (list.length > 0) {
-      var page = list.pop()
-      xrayPage(page, function (error, data) {
-        if (error) {
-          console.error(error)
-        } else {
-          var content = repackContent(data)
-          content.url = page
-          addIndex(content, function (err, payload) {
-            console.log(page)
-            if (err) {
-              console.error(err)
-            } else {
-              console.log(payload)
-              next()
-            }
-          })
-        }
-      })
-    } else {
-      console.log('Finished indexing')
-    }
-  }
-
-  next()
-}
-
-smtaStream.on('data', data => {
-  const json = JSON.parse(data.toString())
-  pages.push(json.loc)
-})
-
-smtaStream.on('end', () => {
-  console.log('Finished collecting pages')
-  indexPages(pages)
-})
-
-deleteIndex(function (error, payload) {
-  if (error) {
-    console.error(error)
-  } else {
-    console.log(payload)
-    http.get(process.env.SITEMAP_URL, function (response) {
-      response
-        .pipe(smtaStream)
-    })
-  }
-})
-*/
