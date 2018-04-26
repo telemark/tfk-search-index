@@ -51,7 +51,7 @@
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "5.0.1",
     "uuid": "3.2.1",
-    "winston": "2.4.1",
+    "winston": "2.4.2",
     "winston-papertrail": "1.0.5",
     "xml2js": "0.4.19"
   }
