@@ -50,7 +50,7 @@
     "jsonwebtoken": "8.3.0",
     "normalize-html-whitespace": "0.2.0",
     "sitemap-to-array": "5.0.1",
-    "uuid": "3.2.1",
+    "uuid": "3.3.2",
     "winston": "2.4.3",
     "winston-papertrail": "1.0.5",
     "xml2js": "0.4.19"
