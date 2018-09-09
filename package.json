@@ -48,7 +48,6 @@
     "dotenv": "6.0.0",
     "jsonwebtoken": "8.3.0",
     "normalize-html-whitespace": "0.2.0",
-    "sitemap-to-array": "5.0.1",
     "uuid-random": "1.0.6",
     "winston": "2.4.4",
     "winston-papertrail": "1.0.5",
