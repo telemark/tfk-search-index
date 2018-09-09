@@ -19,8 +19,12 @@ async function indexPages () {
   const sitemap = await getSitemap(process.env.SITEMAP_URL)
   let pages = sitemap.map(page => page.loc)
   logger('info', ['index', 'indexPages', 'pages to index', pages.length])
-  const msg = await deleteIndex()
-  logger('info', ['index', 'indexPages', 'index deleted', JSON.stringify(msg)])
+  if (!process.env.NO_DELETE_INDEX) {
+    const msg = await deleteIndex()
+    logger('info', ['index', 'indexPages', 'index deleted', JSON.stringify(msg)])
+  } else {
+    logger('info', ['index', 'indexPages', 'no delete index'])
+  }
   let success = 0
   let fails = 0
   const next = async () => {
