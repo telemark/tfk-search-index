@@ -10,7 +10,7 @@ const env = process.argv[2]
 if (env) {
   const envFilePath = path.resolve(process.cwd(), env)
   logger('info', ['index', 'loading environment', env])
-  require('dotenv').config({path: envFilePath})
+  require('dotenv').config({ path: envFilePath })
 } else {
   logger('warn', ['index', 'no environment loaded'])
 }

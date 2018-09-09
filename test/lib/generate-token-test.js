@@ -5,7 +5,7 @@ tap.throws(
   function () {
     generateToken()
   },
-  {message: 'Missing required input: options object'},
+  { message: 'Missing required input: options object' },
   'Throws if options not supplied'
 )
 
@@ -16,7 +16,7 @@ tap.throws(
     }
     generateToken(options)
   },
-  {message: 'Missing required input: options.key'},
+  { message: 'Missing required input: options.key' },
   'Throws if options.key not supplied'
 )
 
@@ -28,6 +28,6 @@ tap.throws(
     }
     generateToken(options)
   },
-  {message: 'Missing required input: options.payload'},
+  { message: 'Missing required input: options.payload' },
   'Throws if options.payload not supplied'
 )

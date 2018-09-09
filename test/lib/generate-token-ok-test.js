@@ -7,6 +7,6 @@ var payload = {
   description: 'general nice guy'
 }
 var expected = `Bearer ${jwt.sign(payload, secret)}`
-var token = generateToken({key: secret, payload: payload})
+var token = generateToken({ key: secret, payload: payload })
 
 tap.equal(expected, token, 'Generates expected token')
