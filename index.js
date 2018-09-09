@@ -11,6 +11,9 @@ if (env) {
   const envFilePath = path.resolve(process.cwd(), env)
   logger('info', ['index', 'loading environment', env])
   require('dotenv').config({ path: envFilePath })
+} else if (process.env.NODE_ENV !== 'production') {
+  logger('info', ['index', 'loading environment', '.env'])
+  require('dotenv').config()
 } else {
   logger('warn', ['index', 'no environment loaded'])
 }
