@@ -47,7 +47,7 @@
     "cheerio": "1.0.0-rc.2",
     "dotenv": "6.2.0",
     "jsonwebtoken": "8.5.0",
-    "normalize-html-whitespace": "0.2.0",
+    "normalize-html-whitespace": "1.0.0",
     "uuid-random": "1.0.6",
     "winston": "2.4.4",
     "winston-papertrail": "1.0.5",
