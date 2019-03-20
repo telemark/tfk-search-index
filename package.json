@@ -46,7 +46,7 @@
     "axios": "0.18.0",
     "cheerio": "1.0.0-rc.2",
     "dotenv": "7.0.0",
-    "jsonwebtoken": "8.5.0",
+    "jsonwebtoken": "8.5.1",
     "normalize-html-whitespace": "1.0.0",
     "uuid-random": "1.0.7",
     "winston": "2.4.4",
