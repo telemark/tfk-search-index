@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/telemark/tfk-search-index#readme",
   "devDependencies": {
-    "coveralls": "3.0.5",
+    "coveralls": "3.0.6",
     "standard": "13.1.0",
     "tap": "14.5.0"
   },
