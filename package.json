@@ -49,7 +49,7 @@
     "jsonwebtoken": "8.5.1",
     "normalize-html-whitespace": "1.0.0",
     "uuid-random": "1.0.9",
-    "winston": "2.4.4",
+    "winston": "2.4.5",
     "winston-papertrail": "1.0.5",
     "xml2js": "0.4.19"
   }
